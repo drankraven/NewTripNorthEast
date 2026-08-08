@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="长春出发经哈尔滨、佳木斯、鸡西兴凯湖、横道河子、镜泊湖、珲春、延吉返回长春的 7 天 6 晚油车自驾环线路书，含高德实测车程、星图云地图、住宿餐饮与加油建议。"
+    />
+    <title>长春出发 · 东北 7 天自驾环线（2026.08.13–08.19）</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="planner">
+        <header class="masthead">
+          <p class="eyebrow">Northeast China loop roadbook · 7 days · 2026.08.13–08.19</p>
+          <h1>长春出发 · 东北 7 天油车自驾环线</h1>
+          <p class="lede">
+            一份可以直接照着开的 <strong>7 天 6 晚油车自驾环线</strong>。3 人成行，8 月 13 日周四从长春出发，8 月 19 日周三返回。全程<strong>零回头路</strong>，覆盖哈尔滨老城、三江平原、中俄界湖兴凯湖、中东铁路俄式小镇、火山堰塞湖镜泊湖、珲春帝王蟹和延边朝鲜族风情。
+          </p>
+          <div class="stats">
+            <div><strong>7 天 6 晚</strong><span>住哈尔滨、佳木斯、密山、镜泊湖 ×2、延吉</span></div>
+            <div><strong>约 2,543 km / 30.2 h</strong><span>高德 API 按完整途经点实测</span></div>
+            <div><strong>过路费约 ¥973</strong><span>按 7.5–9 L/100km 约需 191–229 L 油</span></div>
+          </div>
+        </header>
+
+        <section class="section-block">
+          <div class="section-heading"><div><p class="eyebrow">Route logic</p><h2>为什么这样编排</h2></div></div>
+          <div class="insight-grid">
+            <article class="insight">
+              <span class="tag">零回头路</span>
+              <h3>顺时针环线，每一公里都在往前走</h3>
+              <p>长春向北到哈尔滨，沿松花江东行至佳木斯，南下鸡西密山，再向西南进牡丹江山区，最后经珲春延吉西返长春。全程闭环，没有任何一段是原路折返。</p>
+            </article>
+            <article class="insight">
+              <span class="tag">横道河子的位置</span>
+              <h3>放在 D4 进山途中，省下 400 km</h3>
+              <p>横道河子若从镜泊湖单独往返，要多跑 400 km 以上。把它安排在密山进镜泊湖的路上顺路停留，几乎不增加里程。</p>
+            </article>
+            <article class="insight">
+              <span class="tag">镜泊湖连住两晚</span>
+              <h3>唯一不换酒店的一天，用来喘气</h3>
+              <p>D5 全天在景区内活动、不换住宿，是连续 6 天驾驶中唯一的缓冲日，也把吊水楼瀑布和地下森林火山口都放进了同一天。</p>
+            </article>
+            <article class="insight">
+              <span class="tag">最长一天可控</span>
+              <h3>最长单日 473 km，均值 363 km</h3>
+              <p>7 天里没有任何一天超过 6 小时驾驶。最长的 D6（镜泊湖→珲春→延吉）只安排两个停留点，节奏简单。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section-block">
+          <div class="section-heading"><div><p class="eyebrow">Two lakes</p><h2>兴凯湖和镜泊湖会不会重复？</h2></div></div>
+          <div class="notice">
+            <strong>不会，两者的成因和体验完全不同。</strong>
+            <br /><br />
+            <b>兴凯湖</b>是中俄界湖，湖面 4380 km²（比 6 个太湖还大），站在岸边看不到对岸。它有真正的细沙滩、涌浪和 90 km 长的天然湖岗，体感更接近海。看点是「辽阔」和日落。
+            <br /><br />
+            <b>镜泊湖</b>是一万年前火山熔岩堵塞牡丹江形成的堰塞湖，狭长 45 km，两岸是火山岩峭壁。看点是落差 20 多米的吊水楼瀑布、峡谷游船，以及旁边塌陷成坑的地下森林火山口。
+            <br /><br />
+            一个是平原上的「海」，一个是火山造出来的峡谷水系。放在同一趟行程里是互补，不是重复。
+          </div>
+        </section>
+
+        <section class="section-block">
+          <div class="section-heading"><div><p class="eyebrow">Before departure</p><h2>8 月中旬出行提醒</h2></div></div>
+          <div class="info-grid season-grid">
+            <div class="info-box"><h3>8 月是最好的时候</h3><p>东北 8 月均温 20–26 ℃，是全年最舒服的月份。但早晚温差大，山区和湖边夜里能到 15 ℃ 以下，薄外套必带。</p></div>
+            <div class="info-box"><h3>丰水期与雷阵雨</h3><p>8 月是吊水楼瀑布水量最好的时候，同时也是雨季。山区午后易有雷阵雨，镜泊湖和横道河子段注意路面湿滑。</p></div>
+            <div class="info-box"><h3>蚊虫是真的多</h3><p>兴凯湖湖岗、镜泊湖景区、地下森林都在湿地林区，8 月蚊虫密集。驱蚊液、长袖长裤按刚需准备。</p></div>
+            <div class="info-box"><h3>周一闭馆风险</h3><p>D5（8/17）是周一。景区不受影响，但若临时想加博物馆类景点需先确认。</p></div>
+            <div class="info-box"><h3>票价与表演场次</h3><p>镜泊湖跳水表演场次、游船班次、各景区票价均会调整，且受天气影响。出发前一天再确认一次。</p></div>
+            <div class="info-box"><h3>边境城市证件</h3><p>珲春、密山属边境地区。带好身份证，行车途中可能遇边防检查，配合即可。防川需边境通行证，本行程不安排。</p></div>
+          </div>
+        </section>
+
+        <section class="section-block">
+          <div class="section-heading"><div><p class="eyebrow">Itinerary</p><h2>7 天 6 晚详细路书</h2></div></div>
+          <div id="itinerary" class="timeline"></div>
+        </section>
+
+        <section class="section-block">
+          <div class="section-heading"><div><p class="eyebrow">Fuel plan</p><h2>油车补给 · 进山前必满箱</h2></div></div>
+          <div id="fuel-plan" class="charge-grid"></div>
+          <div class="notice">
+            全程约 2,543 km，按 7.5–9 L/100km 估算需 191–229 L 油。<strong>唯一需要认真对待的是镜泊湖景区——景区内没有加油站</strong>，D4 进山前必须在牡丹江加满，D5 出景区去火山口也要保证半箱以上。其余路段沿线大站充足，建议每天入住后完成加油，让第二天早晨直接出发。
+          </div>
+        </section>
+
+        <section class="section-block">
+          <div class="section-heading"><div><p class="eyebrow">Hotels & food</p><h2>六晚住宿与吃什么</h2></div></div>
+          <div class="info-grid stay-grid">
+            <div class="info-box">
+              <h3>D1 · 哈尔滨</h3>
+              <p><b>首选：</b>中央大街亚朵S酒店 4.7<br /><b>连锁：</b>全季中央大街店 4.4<br /><b>吃：</b>华梅俄餐、马迭尔冰棍、锅包肉</p>
+            </div>
+            <div class="info-box">
+              <h3>D2 · 佳木斯</h3>
+              <p><b>首选：</b>如家neo 佳木斯火车站店 4.7<br /><b>吃：</b>三姐妹冷面、徐记铁锅炖<br /><b>说明：</b>中转站，住宿便宜，重在休整</p>
+            </div>
+            <div class="info-box">
+              <h3>D3 · 密山</h3>
+              <p><b>首选：</b>密山兴凯湖国际大酒店 4.4<br /><b>吃：</b>鸡西大冷面（午）、朝鲜族汤饭（晚）<br /><b>说明：</b>县级市，档次有限但干净</p>
+            </div>
+            <div class="info-box">
+              <h3>D4–D5 · 镜泊湖</h3>
+              <p><b>景区内：</b>镜泊湖瀑布山庄 3.6<br /><b>吃：</b>天水阁湖鱼馆（湖鱼、湖虾）<br /><b>取舍：</b>条件一般但连住两晚不换、不重复检票</p>
+            </div>
+            <div class="info-box">
+              <h3>D6 · 延吉</h3>
+              <p><b>首选：</b>维也纳 延边大学网红墙店 4.8<br /><b>连锁：</b>全季延吉市政府店 4.6<br /><b>吃：</b>延吉烤肉、水上市场夜市</p>
+            </div>
+            <div class="info-box">
+              <h3>最值得的一顿</h3>
+              <p><b>珲春帝王蟹</b>（D6 午餐，新西市场 4.6）。俄罗斯远东活蟹在此入关，市场挑蟹、旁边代加工。三人一只 3–4 斤足够，加工费单算，先谈价。</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-block compact-plan">
+          <div class="section-heading"><div><p class="eyebrow">Flexible options</p><h2>时间不够或体力不支时怎么删</h2></div></div>
+          <div class="notice warning-notice">
+            <strong>D3 的兴凯湖是第一个可弃项。</strong>密山往返兴凯湖共 108 km、约 2.3 小时，若上午延误超过 1 小时就直接放弃，在密山休整。<br /><br />
+            <strong>D4 的东北虎林园是第二个可弃项</strong>，跳过可省 1.5 小时，让进镜泊湖的时间更宽裕。<br /><br />
+            <strong>压缩到 6 天</strong>的可行方式：删掉 D3 的兴凯湖并把 D5 的地下森林火山口取消，把 D4 和 D5 合并为「横道河子 → 镜泊湖 → 吊水楼瀑布」一天。代价是镜泊湖只能看瀑布不能坐船。<br /><br />
+            <strong>D7 若不想一次开满 423 km</strong>，可在敦化住一晚，把返程拆成两段。
+          </div>
+        </section>
+
+        <section class="section-block">
+          <div class="section-heading"><div><p class="eyebrow">Road safety</p><h2>出发前最后检查</h2></div></div>
+          <div class="info-grid">
+            <div class="info-box"><h3>车辆</h3><p>机油、冷却液、胎压、备胎、补胎工具、玻璃水、行车记录仪存储卡。7 天 2543 km，出发前做一次常规保养更稳。</p></div>
+            <div class="info-box"><h3>行李</h3><p>薄外套（早晚温差大）、雨具、驱蚊液、防晒、充电宝、纸巾、垃圾袋、足量饮水。景区内餐饮贵且选择少，备些干粮。</p></div>
+            <div class="info-box"><h3>驾驶</h3><p>3 人轮换，每两小时换人或休息。D3、D6 是两个高强度日，务必前一晚睡足。山区夜路和省道注意动物、农用车。</p></div>
+            <div class="info-box"><h3>证件</h3><p>身份证、驾照、行驶证。密山、珲春为边境地区，途中可能遇检查站。</p></div>
+          </div>
+          <p class="source-note">数据说明：POI 名称、评分、分段里程、预计时长和过路费均来自高德 API 实测查询；地图底图来自星图云。实际导航、开放时间、票价和路况以出发当天为准。</p>
+        </section>
+      </section>
+
+      <aside class="map-panel">
+        <div class="map-header">
+          <div><p class="eyebrow">Amap route · GeoVis tiles</p><h2>7 天真实道路地图</h2></div>
+          <div class="day-filter">
+            <button class="filter-button is-active" data-day="all">全程</button>
+            <button class="filter-button" data-day="1">D1</button>
+            <button class="filter-button" data-day="2">D2</button>
+            <button class="filter-button" data-day="3">D3</button>
+            <button class="filter-button" data-day="4">D4</button>
+            <button class="filter-button" data-day="5">D5</button>
+            <button class="filter-button" data-day="6">D6</button>
+            <button class="filter-button" data-day="7">D7</button>
+          </div>
+        </div>
+        <div class="map-wrap">
+          <div id="leaflet-map" class="leaflet-map-container"></div>
+          <div id="map-status" class="map-status" hidden></div>
+        </div>
+        <div class="poi-legend">
+          <span class="legend-label">地图筛选：</span>
+          <button class="poi-toggle" data-kind="fuel"><span class="poi-dot" style="background:#d97706"></span>加油站</button>
+          <button class="poi-toggle" data-kind="hotel"><span class="poi-dot" style="background:#2563eb"></span>酒店</button>
+          <button class="poi-toggle" data-kind="food"><span class="poi-dot" style="background:#dc2626"></span>餐饮</button>
+        </div>
+        <div class="map-note">7 条高德 API 实测道路折线 · 11 个核心节点 · 30 个酒店、餐饮和加油 POI。点击标记可直接打开高德导航。</div>
+      </aside>
+    </main>
+    <script src="./route-data.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
