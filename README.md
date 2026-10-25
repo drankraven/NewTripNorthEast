@@ -49,6 +49,19 @@ python -m http.server 8080
 # 打开 http://localhost:8080
 ```
 
+## 复用模板
+
+东北环线本身是一个完整示例。若要为新行程生成同款路书，不必改动根目录：
+
+| 目录 | 说明 |
+| --- | --- |
+| `template/` | 通用骨架（`index.html` 结构 + `app.js` 渲染逻辑 + `styles.css` + 注释版 `route-data.js`） |
+| `examples/lianyungang-linyi-jinan/` | 新示例：连云港 → 临沂 → 济南 亲子自驾线（5 天 4 晚，508.6 km，异地还车） |
+
+复制 `template/` 目录后，只需编辑其中的 `route-data.js`（行程数据）与 `index.html`（文案），`app.js` 与 `styles.css` 无需改动。`examples/` 下每个子目录都是一个可独立打开的成品页（`index.html` + `route-data.js`，通过相对路径复用 `../../template/` 的脚本与样式）。
+
+坐标约定：`routeGeometry` 折线用 Leaflet 顺序 `[纬度, 经度]`；`points` / `pois` / `timeline.nav` 用高德顺序 `[经度, 纬度]`。里程 / 时长 / 过路费来自高德实测，不在数据里估算。
+
 ## 免责说明
 
 景区开放时间、票价、表演场次、酒店评分与路况均会变化，出发前一天请再次确认。

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>连云港 · 临沂 · 济南 亲子自驾环线 · 2026.10.29–11.02</title>
+<link rel="stylesheet" href="../../template/styles.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body>
+<main class="app-shell">
+  <div class="planner">
+    <header class="masthead">
+      <div class="eyebrow">亲子自驾路书 · 5 天 4 晚</div>
+      <h1 id="trip-title">—</h1>
+      <p class="lede" id="trip-subtitle">—</p>
+      <p class="dates" id="trip-dates">—</p>
+      <div class="stats" id="trip-stats">
+        <div><strong id="stat-distance">—</strong><span>高德 API 按完整途经点实测</span></div>
+        <div><strong id="stat-hours">—</strong><span>纯驾驶时长，不含游玩</span></div>
+        <div><strong id="stat-days">—</strong><span><b id="stat-pois">—</b> 个打卡点</span></div>
+      </div>
+      <ul class="stat-tags" id="stat-tags"></ul>
+    </header>
+
+    <section class="section-block">
+      <div class="section-heading"><h2>每日行程</h2></div>
+      <div id="itinerary" class="timeline"></div>
+    </section>
+
+    <section class="section-block">
+      <div class="section-heading"><h2>加油 / 充电计划</h2></div>
+      <div id="fuel-plan" class="charge-grid"></div>
+    </section>
+
+    <section class="section-block">
+      <div class="section-heading"><h2>地图</h2></div>
+      <div class="map-wrap">
+        <div id="leaflet-map" class="leaflet-map-container"></div>
+        <div id="status" class="map-status"></div>
+      </div>
+      <div id="day-filter" class="day-filter"></div>
+      <div id="poi-legend" class="poi-legend"></div>
+    </section>
+  </div>
+</main>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="./route-data.js"></script>
+<script src="../../template/app.js"></script>
+</body>
+</html>
