@@ -32,17 +32,23 @@
       <div class="section-heading"><h2>加油 / 充电计划</h2></div>
       <div id="fuel-plan" class="charge-grid"></div>
     </section>
+  </div>
 
-    <section class="section-block">
-      <div class="section-heading"><h2>地图</h2></div>
-      <div class="map-wrap">
-        <div id="leaflet-map" class="leaflet-map-container"></div>
-        <div id="status" class="map-status"></div>
+  <aside class="map-panel">
+    <div class="map-header">
+      <div>
+        <div class="eyebrow">真实道路地图</div>
+        <h2>地图 · 高德实测</h2>
       </div>
       <div id="day-filter" class="day-filter"></div>
-      <div id="poi-legend" class="poi-legend"></div>
-    </section>
-  </div>
+    </div>
+    <div class="map-wrap">
+      <div id="leaflet-map" class="leaflet-map-container"></div>
+      <div id="status" class="map-status"></div>
+    </div>
+    <div id="poi-legend" class="poi-legend"></div>
+    <div class="map-note">点「Day N」只看当日路线；点图例开关酒店/餐饮/加油 POI。道路折线与里程由高德路径规划实测。</div>
+  </aside>
 </main>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
