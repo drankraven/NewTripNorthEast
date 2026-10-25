@@ -238,6 +238,127 @@ h3 {
   font-size: 1.18rem;
 }
 
+/* ── 每日行程卡片 ── */
+.day-banner {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin: 18px 0 10px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: var(--panel);
+  font-size: 1.06rem;
+}
+
+.day-banner span {
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+.day-banner strong {
+  font-weight: 750;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 78px minmax(0, 1fr);
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.timeline-item:last-child {
+  border-bottom: 0;
+}
+
+.timeline-item time {
+  font-variant-numeric: tabular-nums;
+  font-weight: 750;
+  font-size: 0.78rem;
+  color: var(--teal);
+}
+
+.timeline-item h4 {
+  margin: 0 0 4px;
+  font-size: 1.02rem;
+}
+
+.tip-row {
+  margin: 6px 0 0;
+  font-size: 0.84rem;
+  color: var(--muted);
+}
+
+.tip-row strong {
+  color: var(--ink);
+}
+
+.dates {
+  margin: 6px 0 0;
+  font-size: 0.8rem;
+  font-weight: 750;
+  color: var(--rust);
+}
+
+.stat-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.stat-tags li {
+  padding: 3px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--paper);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+#itinerary .timeline-card {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+#fuel-plan table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#fuel-plan caption {
+  caption-side: top;
+  padding: 0 0 8px;
+  font-size: 0.74rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-align: left;
+  color: var(--muted);
+}
+
+#fuel-plan th,
+#fuel-plan td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.82rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+#fuel-plan thead th {
+  font-size: 0.7rem;
+  font-weight: 850;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+#fuel-plan tbody td:first-child {
+  font-weight: 800;
+  white-space: nowrap;
+}
+
 .timeline-meta {
   margin-bottom: 10px;
 }

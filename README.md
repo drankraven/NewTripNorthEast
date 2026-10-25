@@ -33,32 +33,35 @@
 
 ## 技术栈
 
-纯静态页面，无构建步骤，无依赖安装。
+纯静态页面，无构建步骤，无依赖安装。**根目录即通用路书骨架**，任何行程只需两个文件：
 
 | 文件 | 说明 |
 | --- | --- |
-| `index.html` | 页面骨架、路线说明、住宿餐饮汇总、地图面板 |
-| `app.js` | 逐日行程数据（`routeDays`）、POI 数据（`pois` / `points`）与 Leaflet 渲染逻辑 |
-| `route-data.js` | 高德实测的 7 段道路折线坐标（`window.routeGeometry`） |
+| `index.html` | 通用页面骨架（占位文案，DOM id 由渲染器驱动） |
+| `app.js` | 纯渲染逻辑：读取 `window.routeData` 生成总览/逐日行程/加油表/Leaflet 地图，不含任何行程内容 |
 | `styles.css` | 全部样式 |
+| `route-data.js` | 注释版行程数据占位（复制新行程时从这里对照字段） |
+
+所有行程内容集中在各示例的 `route-data.js`（`window.routeData`：trip / routeGeometry / routeDays / fuelPlan / points / colors / pois / poiColors / tileUrl）。
 
 ## 本地预览
 
+直接双击打开任意示例的 `index.html`（file:// 即可运行），或起本地服务：
+
 ```bash
 python -m http.server 8080
-# 打开 http://localhost:8080
+# 打开 http://localhost:8080/examples/northeast/
 ```
 
-## 复用模板
-
-东北环线本身是一个完整示例。若要为新行程生成同款路书，不必改动根目录：
+## 示例
 
 | 目录 | 说明 |
 | --- | --- |
-| `template/` | 通用骨架（`index.html` 结构 + `app.js` 渲染逻辑 + `styles.css` + 注释版 `route-data.js`） |
-| `examples/lianyungang-linyi-jinan/` | 新示例：连云港 → 临沂 → 济南 亲子自驾线（5 天 4 晚，508.6 km，异地还车） |
+| `index.html` + `route-data.js`（根目录） | 通用骨架本体：占位数据，打开可见空白路书结构 |
+| `examples/northeast/` | 东北环线：长春→哈尔滨→佳木斯→鸡西·兴凯湖→横道河子·镜泊湖→瑶春→延吉→长春（7 天，2,542.7 km，29 POI） |
+| `examples/lianyungang-linyi-jinan/` | 连云港 → 临沂 → 济南 亲子自驾线（5 天 4 晚，508.6 km，异地还车） |
 
-复制 `template/` 目录后，只需编辑其中的 `route-data.js`（行程数据）与 `index.html`（文案），`app.js` 与 `styles.css` 无需改动。`examples/` 下每个子目录都是一个可独立打开的成品页（`index.html` + `route-data.js`，通过相对路径复用 `../../template/` 的脚本与样式）。
+新建行程：复制任意示例目录（或根目录骨架的 `index.html`+`route-data.js`），只编辑其中的 `route-data.js`（行程数据）与 `index.html`（标题/文案），`app.js` 与 `styles.css` 复用根目录无需改动。
 
 坐标约定：`routeGeometry` 折线用 Leaflet 顺序 `[纬度, 经度]`；`points` / `pois` / `timeline.nav` 用高德顺序 `[经度, 纬度]`。里程 / 时长 / 过路费来自高德实测，不在数据里估算。
 

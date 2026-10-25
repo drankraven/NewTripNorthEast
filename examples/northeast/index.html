@@ -3,17 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- 模板页：把本文件与 route-data.js 一起复制到新目录，只需改 <title> 与下方文案；
-     结构与 DOM id 由 app.js 驱动，请勿删除 id。 -->
-<title>示例 · 自驾路书</title>
-<link rel="stylesheet" href="../template/styles.css">
+<meta name="description" content="东北 7 天油车自驾环线路书：长春→哈尔滨→佳木斯→鸡西·兴凯湖→横道河子·镜泊湖→瑶春→延吉→长春，含高德实测车程与地图。">
+<title>东北 7 天油车自驾环线 · 2026.08.13–08.19</title>
+<link rel="stylesheet" href="../../styles.css">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 </head>
 <body>
 <main class="app-shell">
   <div class="planner">
     <header class="masthead">
-      <div class="eyebrow">自驾路书 · 5 天 4 晚</div>
+      <div class="eyebrow" id="trip-eyebrow">东北环线 · 7 天 6 晚</div>
       <h1 id="trip-title">—</h1>
       <p class="lede" id="trip-subtitle">—</p>
       <p class="dates" id="trip-dates">—</p>
@@ -49,6 +48,6 @@
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="./route-data.js"></script>
-<script src="../template/app.js"></script>
+<script src="../../app.js"></script>
 </body>
 </html>
